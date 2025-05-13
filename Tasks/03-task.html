@@ -45,9 +45,22 @@
                 
             }
             get html(){
-                return this.html = `<img src="images/${this.#image}" /><br />Производитель: ${this.#manufacturer}<br />`;
+                return `<img src="images/${this.#image}" /><br />Производитель: ${this.#manufacturer}<br />`;
+            }
+            get image()
+            {
+                return this.#image;
+            }
+            set image(value){
+                this.#image = value;
             }
 
+            get manufacturer(){
+                return this.#manufacturer;
+            }
+            set manufacturer(value){
+                this.#manufacturer = value;
+            }
         }
 
 
